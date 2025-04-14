@@ -56,12 +56,6 @@ Pixel Art Converter is a desktop application that transforms regular images into
 - `styles.css` - Application styling
 - `create-icon.js` - Script to generate the application icon
 
-### Building
-To build the application for your platform:
-```
-npm run make
-```
-
 ## 👾 Acknowledgments
 
 - Pixie, the pixel art guide
