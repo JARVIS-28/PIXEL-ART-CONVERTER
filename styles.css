@@ -1,0 +1,197 @@
+body {
+  font-family: 'Press Start 2P', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e2f; /* Dark navy background */
+  color: #ffffff; /* Clean white text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 20px 0;
+  color: #ffcc00; /* Bright yellow */
+}
+
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff4f4f; /* Pixel red */
+  color: white;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+}
+
+button:hover {
+  background-color: #ffcc00; /* Bright yellow on hover */
+  box-shadow: 0 0 10px #ffcc00;
+}
+
+canvas {
+  display: block;
+  margin: 20px auto;
+  border: 2px solid #2e2e3e; /* Soft contrast border */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+  height: auto;
+}
+
+select {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ffcc00;
+  border-radius: 5px;
+  background-color: #2e2e3e;
+  color: #ffffff;
+  cursor: pointer;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+select:hover {
+  border-color: #ff4f4f;
+  box-shadow: 0 0 10px #ff4f4f;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaaaaa; /* Secondary text */
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  canvas {
+    max-width: 100%;
+    height: auto;
+  }
+
+  button, select {
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+  }
+}
+
+.style-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.style-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  border: 2px solid #ffcc00;
+  border-radius: 5px;
+  background-color: #2e2e3e;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.style-button:hover {
+  background-color: #ff4f4f;
+  box-shadow: 0 0 10px #ff4f4f;
+}
+
+.style-button.active {
+  background-color: #ffcc00;
+  color: #1e1e2f;
+  box-shadow: 0 0 10px #ffcc00;
+}
+
+/* Custom Alert Dialog Styling */
+.custom-alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1e1e2f;
+  border: 4px solid #ffcc00;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(255, 204, 0, 0.5);
+  z-index: 1000;
+  min-width: 300px;
+  max-width: 90%;
+  text-align: center;
+  animation: pixelate 0.3s ease-out;
+}
+
+.custom-alert h3 {
+  color: #ffcc00;
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: 'Press Start 2P', sans-serif;
+}
+
+.custom-alert p {
+  color: #ffffff;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.custom-alert button {
+  background-color: #ff4f4f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Press Start 2P', sans-serif;
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+.custom-alert button:hover {
+  background-color: #ffcc00;
+  box-shadow: 0 0 10px #ffcc00;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+@keyframes pixelate {
+  0% {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}

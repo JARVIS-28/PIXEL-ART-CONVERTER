@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Art App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="landingPage">
+    <h1>Welcome to Pixel Art Converter!</h1>
+    <p id="character">👾 Hi there! I'm Pixie, your pixel art guide. Click 'Start' to begin!</p>
+    <button id="startButton">Start</button>
+  </div>
+
+  <div id="appPage" style="display: none;">
+    <h1>Pixel Art Converter</h1>
+    <div class="style-options">
+      <button class="style-button" data-style="basic">Basic Pixelation</button>
+      <button class="style-button" data-style="colorLimited">Color-Limited Pixelation</button>
+      <button class="style-button" data-style="mosaic">Mosaic Pixelation</button>
+      <button class="style-button" data-style="ascii">ASCII Art Pixelation</button>
+      <button class="style-button" data-style="isometric">Isometric Pixelation</button>
+      <button class="style-button" data-style="cartoon">Cartoon Pixelation</button>
+    </div>
+    <button id="uploadButton">Upload Image</button>
+    <canvas id="imageCanvas"></canvas>
+    <div class="button-row">
+      <button id="previewButton">Apply Style</button>
+      <button id="clearButton">Reset Image</button>
+      <button id="downloadButton">Download Image</button>
+    </div>
+    <footer>Made with ❤️ by Pixel Art Enthusiast</footer>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
