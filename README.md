@@ -22,10 +22,6 @@ Pixel Art Converter is a desktop application that transforms regular images into
 - **Custom Styling**: Retro-themed UI with pixel art aesthetics throughout the application
 - **Download Support**: Save your pixel art creations to use in projects, games, or social media
 
-## 🖼️ Screenshots
-
-[Screenshots will be added soon]
-
 ## 🚀 Installation
 
 ### Prerequisites
@@ -66,10 +62,6 @@ To build the application for your platform:
 npm run make
 ```
 
-## 📜 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## 👾 Acknowledgments
 
 - Pixie, the pixel art guide
@@ -81,4 +73,4 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 
 ---
 
-Made with ❤️ by [Your Name]
+Made by [Janvii RV]
