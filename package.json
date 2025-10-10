@@ -4,15 +4,48 @@
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron ."
+    "start": "electron .",
+    "build": "node build.js",
+    "prebuild": "node create-icons.js",
+    "build:all": "node build-all.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "description": "Pixel Art desktop app built with Electron",
   "dependencies": {
     "canvas": "^3.1.0",
-    "electron": "^35.1.5",
     "jimp": "^1.6.0"
   },
-  "description": ""
+  "devDependencies": {
+    "electron": "^35.1.5",
+    "electron-builder": "^26.0.12",
+    "png-to-ico": "*",
+    "png2icons": "*"
+  },
+  "build": {
+    "appId": "com.yourname.pixelart",
+    "productName": "PixelArt",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.graphics-design",
+      "icon": "build/icon.icns"
+    },
+    "linux": {
+      "target": "AppImage",
+      "category": "Graphics",
+      "icon": "build/icon.png"
+    },
+    "publish": null
+  }
 }
